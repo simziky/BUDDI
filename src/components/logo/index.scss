@@ -1,0 +1,28 @@
+$Iphone: 500px;
+
+
+.Logo-Main {
+
+    img {
+        height: 50px;
+        position: absolute;
+        right: 40px;
+        margin-top: 30px;
+
+            @media (max-width: $Iphone){
+                height: 30px;
+            right: 20px;
+            margin-top: 10px;
+            z-index: 2;
+            }
+        }
+
+    
+}
+
+
+
+
+
+
+

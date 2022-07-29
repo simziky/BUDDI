@@ -1,0 +1,107 @@
+$Iphone: 500px;
+
+.store-main {
+    height: 100vh;
+    width: 100vw;
+    background-image: url('../../images/home22.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left center;
+    z-index: 0;
+
+        @media (max-width:$Iphone) {
+
+            &::before {
+                position: absolute;
+                content: "";
+                height: 100%;
+                width: 100%;
+                z-index: 1;
+                background-color: rgba(0, 0, 0, 0.282);
+        
+            }
+        }
+
+    main {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        position: absolute;
+        z-index: 2;
+        
+
+        .own-a-store {
+            color: white;
+            width: 30%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+           
+
+            .sec1 {
+                margin-bottom: 40px;
+                width: 300px;
+                
+                span {
+                    width: 300px;
+                    display: flex;
+                    justify-content: center;
+
+                    img {
+                        height: 70px;
+                        margin-bottom: 10px;
+                    }
+                }
+
+                h1 {
+                    text-align: center;
+                    color: black;
+                    font-size: 40px;
+                    font-weight: 700;
+                }
+
+                p {
+                    font-size: 20px;
+                }
+            }
+
+            .sec2 {
+                margin-bottom: 40px;
+                width: 300px;
+
+                span {
+                    width: 300px;
+
+                    img {
+                        height: 60px;
+                        margin-bottom: 10px;
+                    }
+                }
+
+                p {
+                    font-size: 20px;
+                }
+            }
+
+            .sec3 {
+                width: 300px;
+
+                span {
+                    width: 300px;
+                    display: flex;
+                    justify-content: center;
+                    img {
+                        height: 60px;
+                        margin-bottom: 10px;
+                    }
+                }
+                p {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
