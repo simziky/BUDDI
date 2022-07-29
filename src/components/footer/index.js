@@ -17,8 +17,8 @@ const Footer = () => {
                             <div className='socials'>
                                 <h1>Contact Us</h1>
                                 <div className='contacts'>
-                                <a target= 'whatsapp' href='#'> <div className='whatsapp'><WhatsAppIcon /></div></a>
-                                <a target= 'instagram' href='#'> <div className='insta'><InstagramIcon /></div> </a>
+                                <a target= 'whatsapp' href='https://yukiport.netlify.app/'> <div className='whatsapp'><WhatsAppIcon /></div></a>
+                                <a target= 'instagram' href='https://yukiport.netlify.app/'> <div className='insta'><InstagramIcon /></div> </a>
                                 </div>
                             </div>
 
