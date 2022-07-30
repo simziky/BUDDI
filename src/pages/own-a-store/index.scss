@@ -3,7 +3,7 @@ $Iphone: 500px;
 .store-main {
     height: 100vh;
     width: 100vw;
-    background-image: url('../../images/home22.jpg');
+    background-image: url('../../images/home22 (2).jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left center;
@@ -39,6 +39,14 @@ $Iphone: 500px;
             display: flex;
             flex-direction: column;
             justify-content: space-around;
+
+            @media (max-width:$Iphone) {
+                    width: 100%;
+                    align-items: center;
+                    height: 90%;
+                    
+            
+                }
            
 
             .sec1 {
