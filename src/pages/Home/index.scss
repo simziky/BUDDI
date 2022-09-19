@@ -55,8 +55,8 @@ $Iphone:500px;
 
             @media (max-width:$Iphone) {
               margin-top: 40px;
-               font-size: 2.5rem;
-               width: 700px;
+               font-size: 3rem;
+               width: 300px;
             }
             p:nth-child(1) {
                 margin-top: 20px;
@@ -70,7 +70,7 @@ $Iphone:500px;
                 margin-left:130px;
 
                 @media (max-width:$Iphone) {
-                  margin-left: 0px!important;
+                  margin-left: -50px!important;
                }
             }
 
@@ -89,7 +89,7 @@ $Iphone:500px;
                 font-family: 'Avocado Creamy', sans-serif;
 
                 @media (max-width:$Iphone) {
-                    font-size: 2rem;
+                    font-size: 3rem;
                 
                  }
             }
@@ -103,7 +103,7 @@ $Iphone:500px;
 
             @media (max-width:$Iphone) {
                 margin-top: 2em;
-                width: 293.9px;
+                width: 250px;
              }
 
 
@@ -114,6 +114,10 @@ $Iphone:500px;
             p {
                 font-size: 20px;
                 line-height: 30px;
+
+                @media (max-width:$Iphone) {
+                  font-size: 15px;
+               }
             }
 
             button {

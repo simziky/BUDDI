@@ -1,3 +1,5 @@
+$Iphone:500px;
+
 footer {
     position: absolute;
     
@@ -21,14 +23,31 @@ footer {
             justify-content: space-around;
             align-items: center;
 
+            @media (max-width:$Iphone) {
+                display: flex;
+                
+             }
+
             .address {
                 width: 200px;
                 color: white;
+
+                @media (max-width:$Iphone) {
+                    width: 150px;
+                    
+                 }
                 h1 {
                     margin-bottom: 30px;
                     font-size: 40px;
                     font-weight: 700;
+
+                    @media (max-width:$Iphone) {
+                        font-size: 25px;
+                        margin-bottom: 15px;
+                        
+                     }
                 }
+
                 p{
                     line-height: 25px;
                 }
@@ -42,6 +61,11 @@ footer {
                 width: 200px;
                 position: absolute;
                 top: 30px;
+
+                @media (max-width:$Iphone) {
+                    top: 10px;
+                    
+                 }
 
                 h1 {
                     margin-bottom: 30px;
@@ -64,9 +88,14 @@ footer {
                             width: 50px;
                             color: white;
                             background: rgb(13, 153, 107);
-                            
                             border-radius: 50%;
                            transition: 0.5s;
+
+                           @media (max-width:$Iphone) {
+                            height: 40px;
+                            width: 40px;
+                            
+                         }
 
                             &:hover {
                                 background-color:rgb(10, 138, 96) ;
@@ -85,6 +114,12 @@ footer {
                             background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
                             
 
+                            @media (max-width:$Iphone) {
+                                height: 40px;
+                                width: 40px;
+                                
+                             }
+
                             &:hover {
                                 box-shadow: 0px 10px 19px rgb(251, 51, 33);
                             }
@@ -100,6 +135,11 @@ footer {
 
              img {
                 height: 70px;
+
+                @media (max-width:$Iphone) {
+                    height: 50px;
+                    
+                 }
              }   
             }
 
@@ -112,6 +152,12 @@ footer {
             letter-spacing: 1rem;
             font-size: 22px;
             font-weight: 600;
+
+            @media (max-width:$Iphone) {
+                font-size: 20px;
+                letter-spacing: 0.3rem;
+                
+             }
             
             a {
                 text-decoration: none;
