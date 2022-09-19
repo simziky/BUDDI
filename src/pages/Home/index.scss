@@ -4,7 +4,7 @@ $Iphone:500px;
   height: 100vh;
 
   @media (max-width:$Iphone) {
-    height: 90vh;
+    height: 93vh;
     
   }
 
@@ -20,12 +20,12 @@ $Iphone:500px;
 
     @media (max-width:$Iphone) {
         background-image: url('../../images/home-1c-min.jpg');
-        height: 90vh;
+        height: 93vh;
 
         &::before {
             position: absolute;
             content: "";
-            height: 90vh;
+            height: 93vh;
             width: 100%;
             z-index: 1;
             background-color: rgba(0, 0, 0, 0.282);
@@ -128,9 +128,16 @@ $Iphone:500px;
                 animation: wiggle 2s linear infinite;
                 border-radius: 5px;
                 transition: 0.7s;
+                font-size: medium;
+                font-weight: 600;
                 &:hover{
                     cursor: pointer;
                     background-color: bisque;
+                }
+
+                a {
+                  text-decoration: none;
+                  color: black;
                 }
             }
            
