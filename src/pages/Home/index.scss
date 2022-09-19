@@ -1,8 +1,10 @@
 $Iphone:500px;
 
 .mySwiper {
-  height: 90vh;
+  height: 100vh;
 
+  @media (max-width:$Iphone) {
+    height: 90vh;
 
 .Home-main {
     height: 100vh;
