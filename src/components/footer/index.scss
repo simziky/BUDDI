@@ -1,13 +1,19 @@
 footer {
-    display: block;
-    height: 200px;
-    background-color: black;
-    padding: 50px 150px 50px 150px;
+    position: absolute;
+    
+  //display: flex;
+  //justify-content: center;
+  //align-items: center;
+   height: fit-content;
+   width: 100%;
+  
 
     address {
-        color: white;
+        padding: 50px 0px 50px 0px;
+        width: 100%;
+       
+        background-color: black;
         
-        height: 100%;
         section { 
             width: 100%;
             height: 100%;
@@ -17,11 +23,14 @@ footer {
 
             .address {
                 width: 200px;
-
+                color: white;
                 h1 {
                     margin-bottom: 30px;
                     font-size: 40px;
                     font-weight: 700;
+                }
+                p{
+                    line-height: 25px;
                 }
             } 
 
@@ -31,6 +40,8 @@ footer {
                 justify-content: center;
                 align-items: center;
                 width: 200px;
+                position: absolute;
+                top: 30px;
 
                 h1 {
                     margin-bottom: 30px;
@@ -49,26 +60,35 @@ footer {
                             display: flex;
                             justify-content: center;
                             align-items: center;
-                            height: 40px;
-                            width: 40px;
+                            height: 50px;
+                            width: 50px;
                             color: white;
                             background: rgb(13, 153, 107);
-                            border-radius: 5px;
-                           transition: 1s;
+                            
+                            border-radius: 50%;
+                           transition: 0.5s;
 
                             &:hover {
                                 background-color:rgb(10, 138, 96) ;
+                                box-shadow: 0px 10px 19px rgb(8, 222, 104);
                             }
                         }
                         .insta{
                             display: flex;
                             justify-content: center;
                             align-items: center;
-                            height: 40px;
-                            width: 40px;
+                            height: 50px;
+                            width: 50px;
                             color: white;
-                            background: rgb(153, 13, 53);
-                            border-radius: 5px;
+                            border-radius: 50%;
+                            transition: 0.5s;
+                            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+                            
+
+                            &:hover {
+                                box-shadow: 0px 10px 19px rgb(251, 51, 33);
+                            }
+                            
                         }
                     }
                 }
@@ -81,6 +101,21 @@ footer {
              img {
                 height: 70px;
              }   
+            }
+
+            
+        }
+        .email {
+            margin-top: 25px;
+            display: block;
+            text-align: center;
+            letter-spacing: 1rem;
+            font-size: 22px;
+            font-weight: 600;
+            
+            a {
+                text-decoration: none;
+                color: white;
             }
         }
     }

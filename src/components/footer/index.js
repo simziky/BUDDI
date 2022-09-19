@@ -11,11 +11,11 @@ const Footer = () => {
                         <section>
                             <div className='address'>
                                 <h1>Address</h1>
-                            PLOT, 7 HERITAGE ESTATE IGBE LAARA .IKORODU,LAGOS.
+                           <p> PLOT, 7 HERITAGE ESTATE IGBE LAARA .IKORODU,LAGOS.</p>
                             </div>
 
                             <div className='socials'>
-                                <h1>Contact Us</h1>
+                              
                                 <div className='contacts'>
                                 <a target= 'whatsapp' href='https://yukiport.netlify.app/'> <div className='whatsapp'><WhatsAppIcon /></div></a>
                                 <a target= 'instagram' href='https://yukiport.netlify.app/'> <div className='insta'><InstagramIcon /></div> </a>
@@ -29,7 +29,7 @@ const Footer = () => {
                         </section>
                         
                         <div className='email'>
-                       
+                        <a href=''> buddicustomer@gmail.com </a>
                         </div>
                     </address>
             </footer>

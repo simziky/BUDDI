@@ -28,14 +28,14 @@ const Home = () => {
             <Logo />
                 <div className='Home-text'>
                         <div className='Home-text1'>
-                            <h2>Happy pets,</h2>
-                            <h2>Happy faces</h2>
+                            <p>Happy pets,</p>
+                            <p>Happy faces</p>
                         </div>
                         
 
                         <aside>
                         <span className='Home-text2'>
-                            <h1>WELCOME</h1>
+                            <p>WELCOME</p>
                         </span>
                             <div>
                             <h4>BUDDIpet</h4>
@@ -45,6 +45,13 @@ const Home = () => {
                                 supplies, food, accessories, drugs and a number of services and vet clinics you have a wide range
                                 of option, with BUDDI PET
                             </p>
+
+                                <button>
+                                    <a>
+                                    Join Waitlist
+                                    </a>
+                                    
+                                </button>
                             </div>
                         </aside>
                 </div>
