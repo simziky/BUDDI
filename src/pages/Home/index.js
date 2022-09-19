@@ -47,7 +47,7 @@ const Home = () => {
                             </p>
 
                                 <button>
-                                    <a>
+                                    <a href='https://yukiport.netlify.app/'>
                                     Join Waitlist
                                     </a>
                                     

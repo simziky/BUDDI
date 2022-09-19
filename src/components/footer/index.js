@@ -29,7 +29,7 @@ const Footer = () => {
                         </section>
                         
                         <div className='email'>
-                        <a href=''> buddicustomer@gmail.com </a>
+                        <a href='https://yukiport.netlify.app/'> buddicustomer@gmail.com </a>
                         </div>
                     </address>
             </footer>
