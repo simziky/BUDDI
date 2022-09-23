@@ -1,4 +1,4 @@
-$mobile:480px;
+$mobile:500px;
 $tablets:900px;
 
 .mySwiper {
@@ -83,7 +83,7 @@ $tablets:900px;
                     font-weight: 600;
                  }
 
-                 @media (max-width:$tablets) and (min-width:481px) {
+                 @media (max-width:$tablets) and (min-width:501px) {
                   margin-left: -190px!important;
                }
             }
@@ -96,7 +96,7 @@ $tablets:900px;
                   font-weight: 600;
                }
 
-                @media (max-width:$tablets)and (min-width:481px) {
+                @media (max-width:$tablets)and (min-width:501px) {
                   margin-left: -100px!important;
                }
             }
@@ -136,7 +136,7 @@ $tablets:900px;
                 width: 250px;
              }
 
-             @media (max-width:$tablets)and (min-width:481px) {
+             @media (max-width:$tablets)and (min-width:501px) {
               width: 350px;
            }
 
