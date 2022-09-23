@@ -4,6 +4,7 @@ import Layout from "./Layout";
 import Description from "./pages/Description";
 import Home from "./pages/Home";
 import Store from "./pages/own-a-store";
+import Form from "./pages/form/index"
 
 function App() {
   return (
@@ -11,8 +12,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Layout />} />
           <Route path="Home" element={<Home />} />
-          <Route path="about" element={<Description />} />
-          <Route path="about" element={<Store />} />
+          <Route path="Description" element={<Description />} />
+          <Route path="Store" element={<Store />} />
+          <Route path="form" element={<Form />} />
       </Routes>
     </div>
   );

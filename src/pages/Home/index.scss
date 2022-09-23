@@ -1,9 +1,10 @@
-$Iphone:500px;
+$mobile:480px;
+$tablets:900px;
 
 .mySwiper {
   height: 100vh;
 
-  @media (max-width:$Iphone) {
+  @media (max-width:$mobile) {
     height: 93vh;
     
   }
@@ -18,7 +19,7 @@ $Iphone:500px;
    
     z-index: 0;
 
-    @media (max-width:$Iphone) {
+    @media (max-width:$mobile) {
         background-image: url('../../images/home-1c-min.jpg');
         height: 93vh;
 
@@ -39,13 +40,28 @@ $Iphone:500px;
         width: 45%;
         height: 100%;
         position: absolute;
+    
+       
         right: 0;
         color: white;
         padding-right: 50px;
-        @media (max-width:$Iphone) {
+        @media (max-width:$mobile) {
+          height: 90%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
             padding-right: 20px;
             z-index: 2;
          }
+
+         @media (max-width:$tablets) {
+          height: 90%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+       }
 
         .Home-text1 {
             font-family: 'School Teacher', sans-serif;
@@ -53,7 +69,7 @@ $Iphone:500px;
             font-size: 6rem;
            
 
-            @media (max-width:$Iphone) {
+            @media (max-width:$mobile) {
               margin-top: 40px;
                font-size: 3rem;
                width: 300px;
@@ -61,16 +77,27 @@ $Iphone:500px;
             p:nth-child(1) {
                 margin-top: 20px;
 
-                @media (max-width:$Iphone) {
+                @media (max-width:$mobile) {
                     margin-top: 20px;
-                    margin-left: -120px!important;
+                    margin-left: -90px!important;
+                    font-weight: 600;
                  }
+
+                 @media (max-width:$tablets) and (min-width:481px) {
+                  margin-left: -190px!important;
+               }
             }
             p:nth-child(2) {
                 margin-left:130px;
 
-                @media (max-width:$Iphone) {
-                  margin-left: -50px!important;
+                @media (max-width:$mobile) {
+                  margin-top: 30px;
+                  margin-left: -10px!important;
+                  font-weight: 600;
+               }
+
+                @media (max-width:$tablets)and (min-width:481px) {
+                  margin-left: -100px!important;
                }
             }
 
@@ -88,10 +115,13 @@ $Iphone:500px;
                 font-size: 7rem;
                 font-family: 'Avocado Creamy', sans-serif;
 
-                @media (max-width:$Iphone) {
+                @media (max-width:$mobile) {
                     font-size: 3rem;
+                    font-weight: 600;
                 
                  }
+
+                 
             }
 
            div {
@@ -101,10 +131,14 @@ $Iphone:500px;
            height: fit-content;
             line-height: 25px;
 
-            @media (max-width:$Iphone) {
+            @media (max-width:$mobile) {
                 margin-top: 2em;
                 width: 250px;
              }
+
+             @media (max-width:$tablets)and (min-width:481px) {
+              width: 350px;
+           }
 
 
             h4 {
@@ -115,9 +149,13 @@ $Iphone:500px;
                 font-size: 20px;
                 line-height: 30px;
 
-                @media (max-width:$Iphone) {
+                @media (max-width:$mobile) {
                   font-size: 15px;
                }
+
+               @media (max-width:$tablets)and (min-width:481px) {
+                font-size: 25px;
+             }
             }
 
             button {
@@ -169,8 +207,8 @@ $Iphone:500px;
           transform: rotateZ(0);
         }
       }
-    
 
+      
    
 }
 

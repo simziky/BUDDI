@@ -1,4 +1,4 @@
-import Logo from '../../components/logo'
+//import Logo from '../../components/logo'
 import './index.scss'
 import Shopping from '../../images/shopping-cart.png'
 import Paw from '../../images/paw.png'
@@ -8,7 +8,6 @@ const Description = () => {
     return (
         <>
         <div className='Desc-Main'>
-                <Logo />
             <div className='main'>
                 <section className='desc'>
                     <h1>Description</h1>

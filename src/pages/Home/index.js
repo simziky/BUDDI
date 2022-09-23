@@ -1,3 +1,4 @@
+import {Link, NavLink} from 'react-router-dom'
 import Logo from '../../components/logo'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import "swiper/css";
@@ -9,6 +10,7 @@ import './index.scss'
 
 import Description from '../Description';
 import Store from '../own-a-store';
+//import Form from '../form/index'
 
 const Home = () => {
     return (
@@ -46,12 +48,13 @@ const Home = () => {
                                 of option, with BUDDI PET
                             </p>
 
+                            <NavLink exact="true" activeclassname="active" to="/form">
                                 <button>
-                                    <a href='https://yukiport.netlify.app/'>
+                                    
                                     Join Waitlist
-                                    </a>
                                     
                                 </button>
+                                </NavLink>
                             </div>
                         </aside>
                 </div>
