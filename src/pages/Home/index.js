@@ -1,4 +1,4 @@
-import {Link, NavLink} from 'react-router-dom'
+import {NavLink} from 'react-router-dom'
 import Logo from '../../components/logo'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import "swiper/css";
