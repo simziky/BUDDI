@@ -20,7 +20,7 @@ $tablets:700px;
             height: 100%;
             width: 100%;
             z-index: 1;
-            background-color: rgba(66, 68, 4, 0.725);
+            background-color: rgba(66, 68, 4, 0.345);
     
         }
      }
@@ -96,8 +96,12 @@ $tablets:700px;
             width: 320px;
             margin-left: 100px;
 
-            @media (min-width: $mobile) and (max-width:$tablets){
+            @media (min-width: $mobile) and (max-width:$mobilePro){
                 margin-left:0px;
+             }
+            
+            @media (min-width: $mobilePro) and (max-width:$tablets){
+                width: 300px;  
              }
             
 
@@ -142,8 +146,12 @@ $tablets:700px;
             width: 320px;
             margin-left: 150px;
 
-            @media (min-width: $mobile) and (max-width:$tablets){
+            @media (min-width: $mobile) and (max-width:$mobilePro){
                 margin-left:0px;
+             }
+
+             @media (min-width: $mobilePro) and (max-width:$tablets){
+                width: 300px;  
              }
 
             span {
@@ -188,8 +196,12 @@ $tablets:700px;
             width: 320px;
             margin-left: 100px;
 
-            @media (min-width: $mobile) and (max-width:$tablets){
+            @media (min-width: $mobile) and (max-width:$mobilePro){
                 margin-left:0px;
+             }
+
+             @media (min-width: $mobilePro) and (max-width:$tablets){
+                width: 300px;  
              }
 
             span {
