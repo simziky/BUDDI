@@ -1,5 +1,7 @@
-$mobile:480px;
-$tablets:768px;
+$mobile:300px;
+$mobilePro:481px;
+$tablets:700px;
+
 
 .Desc-Main {
     height: 100vh;
@@ -11,14 +13,14 @@ $tablets:768px;
     overflow: hidden;
     z-index: 0;
 
-    @media (max-width: $mobile){
+    @media (min-width: $mobile) and (max-width:$mobilePro), (min-width: $mobilePro) and (max-width:$tablets){
         &::before {
             position: absolute;
             content: "";
             height: 100%;
             width: 100%;
             z-index: 1;
-            background-color: rgba(0, 0, 0, 0.282);
+            background-color: rgba(66, 68, 4, 0.725);
     
         }
      }
@@ -39,8 +41,13 @@ $tablets:768px;
             padding-right: 70px;
             padding-top: 20px;
 
-            @media (max-width: $mobile){
+            @media (min-width: $mobile) and (max-width:$mobilePro){
                width: 350px;
+               padding-right: 0px;
+            }
+
+            @media (min-width:$mobilePro) and (max-width:$tablets){
+               width: 460px;
                padding-right: 0px;
             }
 
@@ -50,18 +57,18 @@ $tablets:768px;
                 font-size: 40px;
                 font-weight: 600;
 
-                @media (max-width: $mobile){
+                @media (min-width: $mobile) and (max-width:$mobilePro){
                     line-height: 40px;
                 font-size: 25px;
                  }
             }
 
             p {
-                line-height: 35px;
+               padding: 10px; 
+                line-height: 30px;
                 font-size: 20px;
-                text-align: center;
-
-                @media (max-width: $mobile) and (max-height: 640px){
+                
+                @media(max-width:$mobilePro) and (min-height: 640px){
                     line-height: 25px;
                 font-size: 15px;
                  }
@@ -72,7 +79,7 @@ $tablets:768px;
 
        .desc-list {
 
-        @media (max-width: $mobile){
+        @media (min-width: $mobile) and (max-width:$tablets){
             width: 100%;
             height: fit-content;
            display: flex;
@@ -89,7 +96,7 @@ $tablets:768px;
             width: 320px;
             margin-left: 100px;
 
-            @media (max-width: $mobile){
+            @media (min-width: $mobile) and (max-width:$tablets){
                 margin-left:0px;
              }
             
@@ -102,8 +109,9 @@ $tablets:768px;
                 font-size: 20px;
                 font-weight: 700;
                 margin-bottom: 10px;
+             
 
-                @media (max-width: $mobile){
+                @media (min-width: $mobile) and (max-width:$tablets){
                     justify-content: center;
                  }
 
@@ -111,7 +119,7 @@ $tablets:768px;
                     height: 60px;
                     margin-right: 10px;
 
-                    @media (max-width: $mobile){
+                    @media (min-width: $mobile) and (max-width:$mobilePro){
                         height:40px;
                      }
                 }
@@ -123,7 +131,7 @@ $tablets:768px;
                 font-size: 20px;
                 color: white;
 
-                @media (max-width: $mobile){
+                @media (min-width: $mobile) and (max-width:$mobilePro){
                     font-size: 17px;
                  }
             }
@@ -134,7 +142,7 @@ $tablets:768px;
             width: 320px;
             margin-left: 150px;
 
-            @media (max-width: $mobile){
+            @media (min-width: $mobile) and (max-width:$tablets){
                 margin-left:0px;
              }
 
@@ -148,7 +156,7 @@ $tablets:768px;
                 font-weight: 800;
                 margin-bottom: 10px;
 
-                @media (max-width: $mobile){
+                @media (min-width: $mobile) and (max-width:$tablets){
                     justify-content:center;
                  }
 
@@ -157,7 +165,7 @@ $tablets:768px;
                     height: 60px;
                     margin-right: 10px;
 
-                    @media (max-width: $mobile){
+                    @media (min-width: $mobile) and (max-width:$mobilePro){
                         height:40px;
                      }
                 }
@@ -169,7 +177,7 @@ $tablets:768px;
                 font-size: 20px;
                 color: white;
 
-                @media (max-width: $mobile){
+                @media (min-width: $mobile) and (max-width:$mobilePro){
                     font-size: 17px;
                  }
             }
@@ -180,7 +188,7 @@ $tablets:768px;
             width: 320px;
             margin-left: 100px;
 
-            @media (max-width: $mobile){
+            @media (min-width: $mobile) and (max-width:$tablets){
                 margin-left:0px;
              }
 
@@ -193,7 +201,7 @@ $tablets:768px;
                 font-weight: 800;
                 margin-bottom: 10px;
 
-                @media (max-width: $mobile){
+                @media (min-width: $mobile) and (max-width:$tablets){
                     justify-content: center;
                  }
 
@@ -201,7 +209,7 @@ $tablets:768px;
                     height: 60px;
                     margin-right: 10px;
 
-                    @media (max-width: $mobile){
+                    @media (min-width: $mobile) and (max-width:$mobilePro){
                         height:45px;
                      }
                 }
@@ -213,7 +221,7 @@ $tablets:768px;
                 font-size: 20px;
                 color: white;
 
-                @media (max-width: $mobile){
+                @media (min-width: $mobile) and (max-width:$mobilePro){
                     font-size: 17px;
                  }
             }
@@ -231,10 +239,10 @@ $tablets:768px;
                 font-size: 20px;
                 text-align: center;
 
-            }
+                }
 
+            }
         }
-       }
 
         
     }

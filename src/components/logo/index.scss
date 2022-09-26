@@ -1,5 +1,6 @@
-$Iphone: 500px;
-
+$mobile:300px;
+$mobilePro:481px;
+$tablets:700px;
 
 .Logo-Main {
 
@@ -8,12 +9,17 @@ $Iphone: 500px;
         position: absolute;
         right: 40px;
         margin-top: 30px;
+        z-index: 5;
 
-            @media (max-width: $Iphone){
+            @media (min-width: $mobile) and (max-width:$mobilePro){
                 height: 30px;
             right: 20px;
             margin-top: 10px;
             z-index: 2;
+            }
+            @media (min-width: $mobilePro) and (max-width:$tablets){
+                height: 40px;
+           
             }
         }
 

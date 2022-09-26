@@ -10,7 +10,7 @@ const Description = () => {
         <div className='Desc-Main'>
             <div className='main'>
                 <section className='desc'>
-                    <h1>Description</h1>
+                    <h1>About</h1>
                         <p>
                         This is an online commercial platform with a
                         network of dog breeders, sellers etc.
