@@ -96,12 +96,12 @@ $tablets:700px;
             width: 320px;
             margin-left: 100px;
 
-            @media (min-width: $mobile) and (max-width:$mobilePro){
+            @media (min-width: $mobile) and (max-width:$tablets){
                 margin-left:0px;
              }
             
-            @media (min-width: $mobilePro) and (max-width:$tablets){
-                width: 300px;  
+             @media (min-width: $mobilePro) and (max-width:$tablets){
+                width: 370px;
              }
             
 
@@ -115,7 +115,7 @@ $tablets:700px;
                 margin-bottom: 10px;
              
 
-                @media (min-width: $mobile) and (max-width:$tablets){
+                @media (min-width: $mobile) and (max-width:$mobilePro){
                     justify-content: center;
                  }
 
@@ -151,8 +151,10 @@ $tablets:700px;
              }
 
              @media (min-width: $mobilePro) and (max-width:$tablets){
-                width: 300px;  
+                width: 370px;
              }
+
+           
 
             span {
                 width: 320px;
@@ -164,7 +166,7 @@ $tablets:700px;
                 font-weight: 800;
                 margin-bottom: 10px;
 
-                @media (min-width: $mobile) and (max-width:$tablets){
+                @media (min-width: $mobile) and (max-width:$mobilePro){
                     justify-content:center;
                  }
 
@@ -196,13 +198,14 @@ $tablets:700px;
             width: 320px;
             margin-left: 100px;
 
-            @media (min-width: $mobile) and (max-width:$mobilePro){
+            @media (min-width: $mobile) and (max-width:$tablets){
                 margin-left:0px;
              }
 
              @media (min-width: $mobilePro) and (max-width:$tablets){
-                width: 300px;  
+                width: 370px;
              }
+             
 
             span {
                 width: 320px;
@@ -213,9 +216,10 @@ $tablets:700px;
                 font-weight: 800;
                 margin-bottom: 10px;
 
-                @media (min-width: $mobile) and (max-width:$tablets){
+                @media (min-width: $mobile) and (max-width:$mobilePro){
                     justify-content: center;
                  }
+              
 
                 img {
                     height: 60px;
