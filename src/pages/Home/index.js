@@ -17,7 +17,7 @@ const Home = () => {
         <>
         <Swiper
         rewind={true}
-        //autoplay={{ delay: 2500, disableOnInteraction: false,}}
+        autoplay={{ delay: 2500, disableOnInteraction: true,}}
           pagination={{
             clickable: true,
           }}

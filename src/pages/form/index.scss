@@ -1,8 +1,152 @@
+$mobile:300px;
+$mobilePro:481px;
+$tablets:900px;
+
+
 
     .form-main {
         height: 100vh;
         width: 100%;
         background-image: url("../../images/home-last.jpg");
         background-size: cover;
+        background-position: left left;
+        background-repeat: no-repeat;
+
+        @media (min-width:$mobile) and (max-width:$tablets) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+          }
+
         
+            .form-parent {
+
+                position: absolute;
+                height: 600px;
+                right: 100px;
+                bottom: 100px;
+                width: 400px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                
+
+                @media (min-width:$mobilePro) and (max-width:$tablets) {
+                  width: 450px;
+                  right:unset;
+                  bottom:unset;
+                }
+            
+
+                @media (min-width:$mobile) and (max-width:$mobilePro) {
+                    width: 320px;
+                    right:unset;
+                    bottom:unset;
+                  }
+
+                
+               
+         
+                img {
+                    height: 50px;
+                    margin-bottom: 20px;
+                }
+
+                form {
+                   
+                    padding: 20px;
+                    height: 600px;
+                    width: 100%;
+                    background-color: black;
+                    border-radius: 15px;
+                    color: white;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    @media (min-width:$mobile) and (max-width:$mobilePro) {
+                        height: 600px;
+                      }
+
+                    div {
+                        font-family: 'Avocado Creamy', sans-serif;
+                        width: 100%;
+                        text-align: center;
+                        height: 50px;
+                        margin-bottom: 20px;
+                        font-size: 45px;
+                       
+                    }
+
+                    label {
+                        font-size: 20px;
+                        font-family: 'Avocado Creamy', sans-serif;
+                        letter-spacing: 3px;
+                    }
+                    
+                    
+                    input[type=text] , [type=email] {
+                        font-family: 'Avocado Creamy', sans-serif;
+                        letter-spacing: 3px;
+                       height: 30px;
+                       outline: goldenrod;
+                       font-size: 17px;
+                     background-color: black;
+                       border: none;
+                       border-bottom: 2px solid white;
+                       padding: 10px 10px 10px 10px;
+                       color: white;
+
+                       &:focus {
+                        border: 3px solid rgb(255, 213, 0);
+                        border-radius: 3px;
+                       }
+                    }
+
+                    textarea {
+                        font-family: 'Avocado Creamy', sans-serif;
+                        letter-spacing: 3px;
+                       max-height: 100px;
+                       height: 100px;
+                       max-width: 100%;
+                       font-size: 20px;
+                       border: none;
+                       outline: none;
+                       color: white;
+                       border: 1px solid white;
+                       background-color: transparent;
+
+                       option { 
+                        color: black;
+                       }
+
+                        &:focus {
+                            border: 3px solid rgb(255, 213, 0);
+                            border-radius: 3px;
+                           }
+                    }
+
+                    input[type ="submit"] {
+                      font-size: 20px;
+                      letter-spacing: 3px;
+                      font-family: 'Avocado Creamy', sans-serif;
+                      color:white;
+                      background-color: transparent;
+                      border: 1px solid white;
+                      margin-top: 20px;
+                      transition: 0.5s;
+
+                      &:hover {
+                        cursor: pointer;
+                        background-color:rgb(255, 213, 0) ;
+                      }
+                    }
+                }
+            }
+
+
+
     }
